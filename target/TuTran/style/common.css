@@ -1,0 +1,13 @@
+.navbar { border-radius: 0; }
+.table-hover tr:hover { cursor: pointer; }
+.table td { vertical-align: middle !important; }
+.alignCenter { text-align: center; }
+
+/* Header styles */
+#header ul.dropdown-menu { background-color: #080808; }
+#header ul.dropdown-menu a { color: white; }
+#header ul.dropdown-menu a:hover { color: black; }
+
+/* Footer styles */
+div.footerTab { color: white }
+#footer {background-color: #222; margin-left: 0px; padding: 30px 15px 50px 15px; margin-top: 160px;}

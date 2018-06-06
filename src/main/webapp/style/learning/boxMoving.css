@@ -1,0 +1,11 @@
+.box-wrap {
+	background-color: green;
+	height: 350px;
+	position: relative;
+}
+.box {
+	width: 10%;
+	height: 10%;
+	background-color: red;
+	position: absolute;
+}
