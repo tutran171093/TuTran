@@ -8,6 +8,9 @@
 #header ul.dropdown-menu a { color: white; }
 #header ul.dropdown-menu a:hover { color: black; }
 
+/* Body styles */
+.page-content {min-height: 300px;}
+
 /* Footer styles */
 div.footerTab { color: white }
 #footer {background-color: #222; margin-left: 0px; padding: 30px 15px 50px 15px; margin-top: 160px;}

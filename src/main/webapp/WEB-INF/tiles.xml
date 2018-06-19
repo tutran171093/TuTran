@@ -77,28 +77,28 @@
 		</put-list-attribute>
 	</definition>
 	
-	<!-- LEARNING -->
-	<!-- ARTICLE LIST PAGE -->
-	<definition name="tutran.learning.box.moving.tile" extends="tutran.template">
-		<put-attribute name="body" value="/jsp/learning/boxMoving.jsp" />
-		<put-attribute name="title" value="Article Detail" />
+	<!-- CALCULATOR --> 
+	<definition name="tutran.calculator.tile" extends="tutran.template">
+		<put-attribute name="body" value="/jsp/algorithmApplied/calculator/calculator.jsp" />
+		<put-attribute name="title" value="Calculator" />
 		<put-list-attribute name="styles" inherit="true">
-			<add-attribute value="/style/learning/boxMoving.css" />
+			<add-attribute value="/style/algorithmApplied/calculator/calculator.css" />
+			<add-attribute value="/style/font-awesome.min.css" />
 		</put-list-attribute>
 		<put-list-attribute name="scripts" inherit="true">
-			<add-attribute value="/script/learning/boxMoving.js" />
+			<add-attribute value="/script/algorithmApplied/calculator/calculator.js" />
 		</put-list-attribute>
 	</definition>
 	
 	<!-- PACMAN PAGE -->
 	<definition name="tutran.pacman.tile" extends="tutran.template.nofooter">
-		<put-attribute name="body" value="/jsp/pacman/pacman.jsp" />
+		<put-attribute name="body" value="/jsp/algorithmApplied/pacman/pacman.jsp" />
 		<put-attribute name="title" value="Pac-Man" />
 		<put-list-attribute name="styles" inherit="true">
-			<add-attribute value="/style/pacman/pacman.css" />
+			<add-attribute value="/style/algorithmApplied/pacman/pacman.css" />
 		</put-list-attribute>
 		<put-list-attribute name="scripts" inherit="true">
-			<add-attribute value="/script/pacman/pacman.js" />
+			<add-attribute value="/script/algorithmApplied/pacman/pacman.js" />
 		</put-list-attribute>
 	</definition>
 </tiles-definitions>
