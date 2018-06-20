@@ -50,7 +50,7 @@ function convertToPostfix(exp) {
 				number = "";
 			}
 			var s = "";
-			while((s = stack.pop()) != "("){
+			while(stack.length > 0 && (s = stack.pop()) != "("){
 				output.push(s);
 			}
 		}
