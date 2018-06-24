@@ -1,0 +1,23 @@
+.wrapperCV{
+	margin-left: 75px;
+	margin-right: 75px;
+}
+.header{
+	text-align: center;
+}
+.line {
+	width: 100%;
+    border-top: 1px solid black;
+}
+.titleCompany{
+	font-style: italic;
+}
+.nameOfSchool{
+	font-style: italic;
+}
+.contactInfo{
+	font-style: italic;
+}
+.name{
+	font-size: 18px;
+}

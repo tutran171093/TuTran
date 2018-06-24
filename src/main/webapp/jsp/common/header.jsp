@@ -3,26 +3,18 @@
 <div id="header">
 	<nav class="navbar navbar-inverse">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="Index">About Me</a></li>
-			<li>
-				<a class="dropdown-toggle" data-toggle="dropdown" href="">Writing Area
-        			<span class="caret"></span>
-        		</a>
-        		<ul class="dropdown-menu">
-		          <li><a href="ArticleList">Free Writing</a></li>
-		          <li><a href="#">Math</a></li>
-		        </ul>
-			</li>
+			<li class=""><a href="Index">About Me</a></li>
+			<li><a href="ArticleList">Discussion Area</a></li>
 			<li>
 				<a class="dropdown-toggle" data-toggle="dropdown" href="">Algorithm Applied
         			<span class="caret"></span>
         		</a>
         		<ul class="dropdown-menu">
-		          <li><a href="Calculator">Calculator</a></li>
-		          <li><a href="Pacman">PacMan</a></li>
+		          <li><a href="Calculator">A little Calculator</a></li>
+		          <li><a href="Pacman">My cute PacMan</a></li>
 		        </ul>
 			</li>
-			<li><a href="#">Contact</a></li>
+			<li><a target="_blank" href="https://github.com/tutran171093">My GitHub</a></li>
 		</ul>
 	</nav>
 </div>

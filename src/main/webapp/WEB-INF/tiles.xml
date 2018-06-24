@@ -52,6 +52,7 @@
 		<put-attribute name="body" value="/jsp/index.jsp" />
 		<put-attribute name="title" value="Home" />
 		<put-list-attribute name="styles" inherit="true">
+			<add-attribute value="/style/index.css" />
 		</put-list-attribute>
 		<put-list-attribute name="scripts" inherit="true">
 		</put-list-attribute>
@@ -62,16 +63,18 @@
 		<put-attribute name="body" value="/jsp/article/articleList.jsp" />
 		<put-attribute name="title" value="Article List" />
 		<put-list-attribute name="styles" inherit="true">
+			<add-attribute value="/style/article/articleDetail.css" />
 		</put-list-attribute>
 		<put-list-attribute name="scripts" inherit="true">
 		</put-list-attribute>
 	</definition>
 
-	<!-- ARTICLE LIST PAGE -->
+	<!-- ARTICLE DETAIL PAGE -->
 	<definition name="tutran.article.detail.tile" extends="tutran.template">
 		<put-attribute name="body" value="/jsp/article/articleDetail.jsp" />
 		<put-attribute name="title" value="Article Detail" />
 		<put-list-attribute name="styles" inherit="true">
+			<add-attribute value="/style/article/articleDetail.css" />
 		</put-list-attribute>
 		<put-list-attribute name="scripts" inherit="true">
 		</put-list-attribute>
