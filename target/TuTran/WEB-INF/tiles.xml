@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <!-- BASE TEMPLATE -->
+	<definition name="tutran.template" template="/jsp/common/base.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/jsp/common/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-list-attribute name="stylesInherit">
+			<add-attribute value="/style/bootstrap.min.css" />
+			<add-attribute value="/style/font-awesome.min.css" />
+			<add-attribute value="/style/header.css" />
+			<add-attribute value="/style/footer.css" />
+			<add-attribute value="/style/common.css" />
+		</put-list-attribute>
+		<put-list-attribute name="styles" />
+		<put-list-attribute name="scriptsInherit">
+			<add-attribute value="/script/jquery.js" />
+			<add-attribute value="/script/bootstrap.min.js" />
+			<add-attribute value="/script/jquery.blockUI.js" />
+			<add-attribute value="/script/common.js" />
+		</put-list-attribute>
+		<put-list-attribute name="scripts" />
+	</definition>
+	
+	<!-- BASE TEMPLATE 2 -->
+	<definition name="tutran.template.nofooter" template="/jsp/common/base2.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/jsp/common/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-list-attribute name="stylesInherit">
+			<add-attribute value="/style/bootstrap.min.css" />
+			<add-attribute value="/style/font-awesome.min.css" />
+			<add-attribute value="/style/header.css" />
+			<add-attribute value="/style/common.css" />
+		</put-list-attribute>
+		<put-list-attribute name="styles" />
+		<put-list-attribute name="scriptsInherit">
+			<add-attribute value="/script/jquery.js" />
+			<add-attribute value="/script/bootstrap.min.js" />
+			<add-attribute value="/script/jquery.blockUI.js" />
+			<add-attribute value="/script/common.js" />
+		</put-list-attribute>
+		<put-list-attribute name="scripts" />
+	</definition>
+	
+	<!-- INDEX PAGE -->
+	<definition name="tutran.index.tile" extends="tutran.template">
+		<put-attribute name="body" value="/jsp/index.jsp" />
+		<put-attribute name="title" value="Home" />
+		<put-list-attribute name="styles" inherit="true">
+			<add-attribute value="/style/index.css" />
+		</put-list-attribute>
+		<put-list-attribute name="scripts" inherit="true">
+		</put-list-attribute>
+	</definition>
+	
+	<!-- ARTICLE LIST PAGE -->
+	<definition name="tutran.article.list.tile" extends="tutran.template">
+		<put-attribute name="body" value="/jsp/article/articleList.jsp" />
+		<put-attribute name="title" value="Article List" />
+		<put-list-attribute name="styles" inherit="true">
+			<add-attribute value="/style/article/articleDetail.css" />
+		</put-list-attribute>
+		<put-list-attribute name="scripts" inherit="true">
+		</put-list-attribute>
+	</definition>
+
+	<!-- ARTICLE DETAIL PAGE -->
+	<definition name="tutran.article.detail.tile" extends="tutran.template">
+		<put-attribute name="body" value="/jsp/article/articleDetail.jsp" />
+		<put-attribute name="title" value="Article Detail" />
+		<put-list-attribute name="styles" inherit="true">
+			<add-attribute value="/style/article/articleDetail.css" />
+		</put-list-attribute>
+		<put-list-attribute name="scripts" inherit="true">
+		</put-list-attribute>
+	</definition>
+	
+	<!-- CALCULATOR --> 
+	<definition name="tutran.calculator.tile" extends="tutran.template">
+		<put-attribute name="body" value="/jsp/algorithmApplied/calculator/calculator.jsp" />
+		<put-attribute name="title" value="Calculator" />
+		<put-list-attribute name="styles" inherit="true">
+			<add-attribute value="/style/algorithmApplied/calculator/calculator.css" />
+			<add-attribute value="/style/font-awesome.min.css" />
+		</put-list-attribute>
+		<put-list-attribute name="scripts" inherit="true">
+			<add-attribute value="/script/algorithmApplied/calculator/calculator.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<!-- PACMAN PAGE -->
+	<definition name="tutran.pacman.tile" extends="tutran.template.nofooter">
+		<put-attribute name="body" value="/jsp/algorithmApplied/pacman/pacman.jsp" />
+		<put-attribute name="title" value="Pac-Man" />
+		<put-list-attribute name="styles" inherit="true">
+			<add-attribute value="/style/algorithmApplied/pacman/pacman.css" />
+		</put-list-attribute>
+		<put-list-attribute name="scripts" inherit="true">
+			<add-attribute value="/script/algorithmApplied/pacman/pacman.js" />
+		</put-list-attribute>
+	</definition>
+</tiles-definitions>
