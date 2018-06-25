@@ -1,1 +1,0 @@
-<button id="btnResetCoin" class="btn btn-danger">Reset Coin</button>
